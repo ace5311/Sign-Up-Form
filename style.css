@@ -1,0 +1,73 @@
+:root{
+    --image: 35%; 
+    --signup: calc(var(--image) + 1%);
+
+
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: lightgrey;
+}
+
+.Sign-Up-Body {
+    position:absolute;
+    left: var(--signup);
+    display: flex;
+    flex-direction: column;
+    top: 5rem;
+    margin-left: 2.5rem;
+}
+
+.Sign-Up-Body p {
+    width: 35rem;
+    line-height: 1.5rem;
+    }
+
+.sign-up-area {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+}
+
+
+.picture{
+    position:relative;
+}
+
+.background{
+    position: absolute;
+    width: var(--image);
+    height: 100%;
+}
+
+.overlayer {
+    top: 5rem;
+    position: absolute;
+    width: var(--image);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-size: 30px;
+    font-family: 'Silkscreen'
+}
+
+.overlayer img{
+    width: 10rem;
+    height: 10rem;
+}
+
+button {
+    margin: 20px;
+    width: 10rem;
+    background-color: lightslategray;
+    border-radius: 7px;
+    padding: 5px;
+}
